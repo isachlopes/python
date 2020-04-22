@@ -4,4 +4,4 @@
 dias = int(input('Quantos dias o carro foi alugado?: '))
 km = float(input('Quantos quilômetros foram percorridos?: '))
 custo = (dias*60)+(km*0.15)
-print('Após {} dias de locação e {:.0f}km rodados, o custo total ficou em R${:.2f}.'.format(dias, km, custo))
+print(f'Após {dias} dias de locação e {km:.0f}km rodados, o custo total ficou em R${custo:.2f}.')

@@ -1,4 +1,5 @@
-from pygame import *
+from pygame import mixer
+import time
 
 mixer.init()
 mixer.music.load('spirit.mp3')
