@@ -1,5 +1,4 @@
-"""O mesmo professor quer sortear a ordem de apresentação do trabalho dos alunos, faça um programa que leia
-a ordem dos 4 alunos e mostre a ordem na tela."""
+#O mesmo professor quer sortear a ordem de apresentação do trabalho dos alunos, faça um programa que leia a ordem dos 4 alunos e mostre a ordem na tela.
 from random import shuffle
 a = input('Digite o nome do aluno 1: ')
 b = input('Digite o nome do aluno 2: ')
