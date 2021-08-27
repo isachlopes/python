@@ -20,7 +20,3 @@ for p in range(1, 5):
 print(f'A media de idade do grupo é {somaidade / p} anos.')
 print(f'O homem mais velho se chama {nomehvelho} com {idadeM} anos.')
 print(f'Existem {idadeF} menores de 20 anos.')
-
-
-
-
