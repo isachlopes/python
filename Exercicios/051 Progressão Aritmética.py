@@ -5,3 +5,5 @@ dec = t1 + (10-1) * r
 for c in range(t1, dec + r, r):
     print(f'{c} ', end= ' ')
 print('fim')
+
+
