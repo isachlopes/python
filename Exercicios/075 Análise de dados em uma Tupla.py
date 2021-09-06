@@ -6,11 +6,11 @@ c = int(input('Digite o 3° número: '))
 d = int(input('Digite o 4° número: '))
 e = (a, b, c, d)
 print(f'voce digitou os valores {e}')
-
-
-
 print(f'O número 9 apareceu {e.count(9)} vezes.')
-print(f'O número 3 apareceu a primeira vez na posição {e.index(3)}.')
+if 3 in e:
+    print(f'O número 3 apareceu a primeira vez na posição {e.index(3)}.')
+else:
+    print('O valor 3 não foi encontrado.')
 print(f'Os valores pares digitados foram: ', end='')
 for c in e:
     if c % 2 == 0:
