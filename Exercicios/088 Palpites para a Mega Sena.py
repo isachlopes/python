@@ -3,23 +3,21 @@ from time import sleep
 from random import randint
 mega = []
 lista = []
-njogo = cont = tot = 0
+tot = cont = 0
 n = int(input('Número de jogos na mega: '))
-rand = randint(1, 60)
-while True:
+while cont <= n:
     while True:
+        rand = randint(1, 60)
         if rand not in lista:
             lista.append(rand)
-            tot +=1
-        if tot >= 6:
+            tot += 1
+        if tot == 6:
             break
     mega.append(lista[:])
     lista.clear()
     cont += 1
-    if cont == n:
-        break
 print(f'{"-=" * 5} Sorteando {n} Jogos{"-=" * 5}')
-sleep(1)
-for pos, lista in enumerate(mega):
-    print(f'jogo {pos + 1} : {lista}')
+sleep(0.7)
+for p, l in enumerate(lista):
+    print(f'jogo {p + 1} : {lista}')
     sleep(0.3)
