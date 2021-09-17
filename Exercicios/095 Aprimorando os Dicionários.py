@@ -20,15 +20,26 @@ while True:
     if continua in 'N':
         break
 print('-=' * 35)
-print(f'{"Id":<4}{"Nome":<10}{"Gols":<12}{"Total":>12}')
-for c in camp:
-    for k, v in 
-    print(f'{k:<3}{v["nome"]:<10}{v["jogos"]:<12}{v["gols"]:>12}')
-
-for k, v in jogador.items():
-    print(f'O campo {k} tem valor {v}.')
-print('-=' * 35)
-print(f'O jogador {jogador["nome"]} fez no total {jogador["gols"]} gols')
-for cont, j in enumerate(jogador['jogos']):
-    print(f'No jogo {cont} o jogador {jogador["nome"]} fez {j} gols.')
-print(f'Foi um total de {jogador["gols"]} gols.')
+print(f'cod ', end='')
+for i in jogador.keys():
+    print(f'{i:<15}', end='')
+print()
+print('-' * 40)
+for k, v in enumerate(camp):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+    print()
+print('-' * 40)
+while True:
+    busca = int(input('Mostrar dados de qual jogador? 999 para!'))
+    if busca == 999:
+        break
+    if busca >= len(camp):
+        print(f'Erro! não existe o jogador com o codigo {busca}:')
+    else:
+        print(f' -- levantamernto do jogador {camp[busca]["nome"]}--')
+        for i, g in enumerate(camp[busca]['jogos']):
+            print(f'    No jogo {i+1} fez {g} gols!')
+    print('-' * 40)
+print('Volte sempre!!!!!!!')
