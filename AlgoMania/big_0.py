@@ -1,4 +1,5 @@
-import heapq
+a = [1 , 1,23,3, 4 ,5 ]
 
-
-help(heapq)
+for c in range(len(a)):
+    print(c)
+    
