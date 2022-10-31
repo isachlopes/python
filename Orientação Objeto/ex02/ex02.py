@@ -4,18 +4,18 @@ from random import randint
 
 class Pessoa:
     from datetime import date
-    atual = date.today().year
+    ano_atual = date.today().year
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
         
         
     def ano_nascimento(self):
-        print(self.atual - self.idade)
+        print(self.ano_atual - self.idade)
         
     @classmethod
     def por_ano_nasc(cls, nome, nasc):
-        idade = cls.atual - nasc
+        idade = cls.ano_atual - nasc
         return cls(nome, idade)
     
     
