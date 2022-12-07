@@ -28,7 +28,7 @@ class Pessoa:
 p1 = Pessoa('Luiz', 32)
 print(p1)
 print(p1.idade, p1.nome)
-p1.ano_nascimento()
+p1.por_ano_nasc()
 print(Pessoa.usuario_id())
         
         
