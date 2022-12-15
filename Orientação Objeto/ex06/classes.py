@@ -1,9 +1,14 @@
+#Faz uma classe conversar com a outra, mas nenhuma 
+#
+
+
 class Escritor:
-    def __init__(self, nome):
-        self.__nome = nome
+    def __init__(self, nome):#construtor
+        self.__nome = nome #nome do escritor esta privado
+       
         self.__ferramenta = None
 
-    @property
+    @property 
     def nome(self):
         return self.__nome
 
