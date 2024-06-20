@@ -45,4 +45,3 @@ class Pessoa:
         self.comendo = False
         
         
-        
